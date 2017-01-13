@@ -1,13 +1,11 @@
 function FizzBuzz(number){
-    //return fizz(number) + buzz(number) || number.toString();
-    return fizzOrBuzz(number, 3) + fizzOrBuzz(number, 5) || number.toString();
+    return fizz(number) + buzz(number) || number.toString();
 }
 
-function fizzOrBuzz(number, key){
-    var fizzBuzzMap = {3:'Fizz', 5:'Buzz'};
-    return number % key === 0 ? fizzBuzzMap[key] : "";
+function fizz(number){
+    return {true: "Fizz", false: ""}[(number % 3 === 0)];
 }
 
-/*function buzz(number){
-    return number % 5 === 0 ? "Buzz" : "";
-}*/
+function buzz(number){
+    return {true: "Buzz", false: ""}[(number % 5 === 0)];
+}
