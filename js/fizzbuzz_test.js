@@ -1,8 +1,8 @@
 describe("FizzBuzz", function() {
     it("should be say same input", function() {
-        var dataTest = [1, 2, 4, 7, 8, 11, 13, 14];
+        var inputData = [1, 2, 4, 7, 8, 11, 13, 14];
 
-        dataTest.forEach(function(input){
+        inputData.forEach(function(input){
             expect(FizzBuzz(input)).toEqual(input.toString());
         });
     });
