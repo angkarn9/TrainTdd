@@ -3,10 +3,5 @@ function FizzBuzz(num){
         return "Fizz";
     }
 
-    if(num==1){
-        return "1";
-    }else if(num==4){
-        return "4";
-    }
-    return "2";
+    return num.toString();
 }
