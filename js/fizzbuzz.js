@@ -1,4 +1,4 @@
-function FizzBuzz(number){
+function FizzBuzz(number){ 
     return fizz(number) + buzz(number) || number.toString();
 }
 
