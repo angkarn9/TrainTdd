@@ -7,11 +7,15 @@ describe("FizzBuzz", function() {
         expect(FizzBuzz(2)).toEqual("2");
     });
 
-    it("Input 3 Should Be say 3", function(){
+    it("Input 3 Should Be say Fizz", function(){
         expect(FizzBuzz(3)).toEqual("Fizz");
     });
 
     it("Input 4 Shoule Be say 4", function() {
         expect(FizzBuzz(4)).toEqual("4");
+    });
+
+    it("Input 5 Should Be say Buzz", function(){
+        expect(FizzBuzz(5)).toEqual("Buzz");
     });
 });
