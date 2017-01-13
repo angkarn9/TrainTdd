@@ -1,13 +1,21 @@
-function FizzBuzz(num){
-    if (num % 3 == 0 && num % 5 == 0) {
+function FizzBuzz(number){
+    if (isFizz(number) && isBuzz(number)) {
         return "FizzBuzz";
     }
-    if (num%3==0) {
+    if (isFizz(number)) {
         return "Fizz";
     }
-    if (num%5==0) {
+    if (isBuzz(number)) {
         return "Buzz";
     }
 
-    return num.toString();
+    return number.toString();
+}
+
+function isFizz(number){
+    return number % 3 === 0;
+}
+
+function isBuzz(number){
+    return number % 5 === 0;
 }
