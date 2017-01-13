@@ -1,5 +1,5 @@
 function FizzBuzz(num){
-    if (num == 3 || num == 6 || num == 9) {
+    if (num%3==0) {
         return "Fizz";
     }
     if (num == 5) {
