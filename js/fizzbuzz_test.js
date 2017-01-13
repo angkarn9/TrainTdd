@@ -22,4 +22,8 @@ describe("FizzBuzz", function() {
     it("Input 9 Should Be say Fizz", function(){
         expect(FizzBuzz(9)).toEqual("Fizz");
     });
+
+    it("Input 10 Should Be say Buzz", function(){
+        expect(FizzBuzz(10)).toEqual("Buzz");
+    });
 });
